@@ -127,6 +127,18 @@ nav {
   background-position: left;
 }
 
+.hero-section {
+  position: relative;
+}
+
+.hero-img {
+  position: absolute;
+  bottom: 0;
+  width: 600px;
+  left: 50%;
+  transform: translateX(-50%);
+}
+
 .right {
   width: 50%;
 
@@ -273,7 +285,7 @@ header {
   background-color: #020204;
 }
 
-#bg {
+#bg, #bg-mobile {
   position: fixed;
   right: 0;
   left: 0;
@@ -282,6 +294,11 @@ header {
   min-height: 100%;
   opacity: 0.7;
 }
+
+#bg-mobile {
+  display: block;
+}
+
 
 main {
   position: absolute;
@@ -385,4 +402,16 @@ main {
   .icon {
     font-size: 20px;
   }
+
+  #bg{
+    display: none;
+  }
+
+  #bg-mobile {
+    display: block;
+  }
+
+  .hero-img {
+  width: 250px;
+}
 }
