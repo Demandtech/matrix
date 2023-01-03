@@ -285,8 +285,7 @@ header {
   background-color: #020204;
 }
 
-#bg,
-#bg-mobile {
+#bg {
   position: fixed;
   right: 0;
   left: 0;
@@ -296,9 +295,6 @@ header {
   opacity: 0.7;
 }
 
-#bg-mobile {
-  display: block;
-}
 
 main {
   position: absolute;
@@ -466,6 +462,15 @@ footer .footer-right a {
   .footer-right {
     flex-direction: column;
   }
+  #bg {
+  position: fixed;
+  right: 0;
+  left: 0;
+  bottom: 0;
+  min-width: 100%;
+  min-height: 100%;
+  opacity: 0.7;
+}
 }
 
 section {
