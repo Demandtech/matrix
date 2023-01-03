@@ -163,6 +163,7 @@ nav {
 
 .left img {
   width: 100%;
+  object-fit: cover;
   opacity: 0.5;
 }
 
@@ -295,7 +296,6 @@ header {
   opacity: 0.7;
 }
 
-
 main {
   position: absolute;
   top: 100px;
@@ -368,7 +368,7 @@ footer .footer-right a {
   .logo-wrapper {
     border-bottom: 2px solid #54fd05;
     width: 100%;
-    padding: 35px 20px 35px 20px;
+    padding: 20px 20px 20px 20px;
   }
 
   .buy-btn {
@@ -381,7 +381,7 @@ footer .footer-right a {
     align-items: center;
     gap: 30px;
     display: none;
-    margin: 20px 0;
+    margin: 20px;
   }
 
   .nav-open {
@@ -391,6 +391,8 @@ footer .footer-right a {
   .hamburger {
     display: block;
   }
+
+  
 
   .fa-bars {
     cursor: pointer;
@@ -406,7 +408,7 @@ footer .footer-right a {
   .left {
     width: 100%;
     padding-left: 0;
-    max-height: 50vh;
+    
   }
 
   .right {
@@ -453,6 +455,7 @@ footer .footer-right a {
   .hero-img {
     width: 250px;
   }
+
   footer .container {
     flex-direction: column;
     align-items: center;
@@ -463,25 +466,26 @@ footer .footer-right a {
     flex-direction: column;
   }
   #bg {
-  position: fixed;
-  right: 0;
-  left: 0;
-  bottom: 0;
-  min-width: 100%;
-  min-height: 100%;
-  opacity: 0.7;
-}
+    position: fixed;
+    right: 0;
+    left: 0;
+    bottom: 0;
+    min-width: 100vw;
+    min-height: 100vh;
+    opacity: 0.7;
+    object-fit: contain;
+  }
+
+  
 }
 
 section {
   opacity: 0;
-  filter: blur(5px);
-  transform: translateY(100px);
+  transform: translateY(50px);
   transition: all 1s;
 }
 
 .show {
   opacity: 1;
-  filter: blur(0);
   transform: translateY(0);
 }
