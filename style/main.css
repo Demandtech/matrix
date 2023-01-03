@@ -9,6 +9,7 @@ body {
   box-sizing: border-box;
   background-color: rgba(0, 0, 0, 0.5);
   opacity: 0.7;
+  
 }
 h1,
 h2,
@@ -285,7 +286,8 @@ header {
   background-color: #020204;
 }
 
-#bg, #bg-mobile {
+#bg,
+#bg-mobile {
   position: fixed;
   right: 0;
   left: 0;
@@ -298,7 +300,6 @@ header {
 #bg-mobile {
   display: block;
 }
-
 
 main {
   position: absolute;
@@ -364,8 +365,12 @@ main {
 
   .right {
     width: 100%;
-    padding: 100px 30px;
+    padding: 0px 0px 100px 30px;
   }
+
+  /* .right h1 {
+    text-align: center;
+  } */
 
   .about .container {
     padding: 0 30px;
@@ -394,7 +399,7 @@ main {
 
   .phase1,
   .phase2 {
-    max-width: 400px ;
+    max-width: 400px;
     min-width: 300px;
     align-self: center;
   }
@@ -403,15 +408,18 @@ main {
     font-size: 20px;
   }
 
-  #bg{
-    display: none;
-  }
-
-  #bg-mobile {
-    display: block;
-  }
-
   .hero-img {
-  width: 250px;
+    width: 250px;
+  }
 }
+
+section {
+  opacity: 0;
+  transform: translateY(-50px);
+  transition: all 1s;
+}
+
+.show {
+  opacity: 1;
+  transform: translateY(0);
 }

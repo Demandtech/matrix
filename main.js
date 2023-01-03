@@ -14,11 +14,10 @@ const observer = new IntersectionObserver(entries => {
     if(entry.isIntersecting){
       entry.target.classList.add('show')
     }else{
-      entry.target.classList.add('show')
+      entry.target.classList.remove('show')
     }
   })
 })
 
-const hiddenElement = document.querySelectorAll('.section')
+const hiddenElement = document.querySelectorAll('section')
 hiddenElement.forEach(el=> observer.observe(el));
-console.log(hiddenElement)
