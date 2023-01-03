@@ -100,18 +100,23 @@ nav {
   text-decoration: none;
 }
 
-.buy-btn button {
+.buy-btn a {
   border: none;
   padding: 10px 20px;
   background: #54fd05;
-  color: #020001;
+  
   font-size: 18px;
   border-radius: 12px;
   cursor: pointer;
   font-family: 'geomatrix';
 }
 
-.buy-btn button:hover {
+.buy-btn a{
+  color: #020001;
+  text-decoration: none;
+}
+
+.buy-btn a:hover {
   color: #54fd05;
   background: transparent;
 }
