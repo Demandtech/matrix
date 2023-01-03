@@ -7,7 +7,8 @@ body {
   padding: 0;
   margin: 0;
   box-sizing: border-box;
-  background-color: #020204;
+  background-color: rgba(0,0,0, .5);
+  opacity: 0.7;
 }
 h1,
 h2,
@@ -120,6 +121,7 @@ li a {
   align-items: center;
   padding: 50px 0;
   background: #020204;
+  margin-bottom: 50px;
 }
 
 .right {
@@ -139,6 +141,7 @@ li a {
 
 .left img {
   width: 100%;
+  opacity: 0.7;
 }
 
 .about {
@@ -196,10 +199,8 @@ li a {
 .phase2 {
   background-color: #020204;
   color: #92e5a1;
-  border: 2px solid #54fd05;
   flex: 1;
   padding: 20px;
-  padding-left: 60px;
 }
 
 .phase1 h3,
@@ -208,46 +209,15 @@ li a {
   margin-bottom: 40px;
 }
 
-.phase1 h3 span,
-.phase2 h3 span {
-  color: #350508;
-}
-
-.phase1 ul,
-.phase2 ul {
-  display: flex;
-  flex-direction: column;
+.phase1 h6 {
   font-size: 20px;
-  list-style: none;
-  align-items: flex-start;
-  counter-reset: my-counter;
+  margin-bottom: 10px;
 }
 
-.phase1 ul li,
-.phase2 ul li {
-  margin: 0 0 40px 0;
-  counter-increment: my-counter;
-  position: relative;
-}
+.phase1 p, .phase2 p {
+  font-size: 18px;
+  font-family: 'geomatrix';
 
-.phase1 ul li::before,
-.phase2 ul li::before {
-  content: counter(my-counter);
-  color: #54fd05;
-  font-size: 1.5rem;
-  font-weight: bold;
-  position: absolute;
-  --size: 35px;
-  left: calc(-1 * var(--size) - 10px);
-  line-height: var(--size);
-  width: var(--size);
-  height: var(--size);
-  top: 0;
-  transform: rotate(-10deg);
-  background: black;
-  border-radius: 50%;
-  text-align: center;
-  box-shadow: 1px 1px 0 #999;
 }
 
 .tokenomic h2 {
@@ -302,6 +272,7 @@ header {
   bottom: 0;
   min-width: 100%;
   min-height: 100%;
+  opacity: 0.7;
 }
 
 main {
@@ -396,18 +367,12 @@ main {
 
   .phase1,
   .phase2 {
-    padding: 0;
+    padding: 20px;
   }
 
-  .phase1 ul,
-  .phase2 ul {
-    padding-left: 50px;
-  }
+  
 
-  .phase1 h3,
-  .phase2 ul {
-    text-align: center;
-  }
+  
   .icon {
     font-size: 20px;
   }
