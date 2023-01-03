@@ -267,10 +267,10 @@ li a {
   display: flex;
   font-family: 'geomatrix';
   justify-content: space-between;
-  background: #350508;
   color: #54fd05;
   padding: 20px;
   margin-bottom: 20px;
+  background: #020204;
 }
 
 .supply p,
@@ -316,9 +316,11 @@ main {
   .container {
     max-width: 100%;
   }
+
   .logo {
-    font-size: 20px;
+    font-size: 16px;
   }
+
   nav {
     flex-direction: column;
     width: 100%;
@@ -409,7 +411,5 @@ main {
   .icon {
     font-size: 20px;
   }
-  .logo {
-    font-size: 20px;
-  }
+  
 }
