@@ -14,6 +14,9 @@
     <script defer src="./main.js"></script>
   </head>
   <body>
+    <video autoplay muted loop id="bg" poster="./assets/images/poster.webp">
+       <source src="./assets/images/body-bg.mp4" type="video/mp4">
+    </video>
     <header>
       <div class="container">
         <nav>
@@ -23,7 +26,7 @@
               <i class="fa-solid fa-bars"></i>
             </button>
           </div>
-          
+
           <ul class="nav-bar">
             <li class="nav-item">
               <a href="#about">About</a>
@@ -40,11 +43,8 @@
           </div>
         </nav>
       </div>
-    </header>
+    </header> 
     <main>
-      <video autoplay muted loop playsinline id="bg" poster="./assets/images/poster.webp">
-            <source src="./assets/images/body-bg.mp4" type="video/mp4" />
-          </video>
       <section class="section hero-section">
         <div class="hero">
           <div class="left">
@@ -59,20 +59,23 @@
             </p>
           </div>
         </div>
-        <img
-          class="hero-img"
-          src="./assets/images/IMG_1141-removebg-preview.png"
-          alt=""
-        />
+        <div>
+          <img
+            class="hero-img"
+            src="./assets/images/IMG_1141-removebg-preview.png"
+            alt=""
+          />
+        </div>
       </section>
       <div class="container">
         <section class="about section" id="about">
           <div class="container">
             <h2>About Us</h2>
             <p>
-              The matrix is waging war on the degens, we must not let that
-              happen, we are fighters. The matrix must loose. Load up your
-              wallet and let's take this to the moon
+              The matrix is waging a war that aims to maintain the status quo
+              and keep the rich richer, and the poor poorer. The first step of
+              breaking out of the matrix is being aware you are in the matrix in
+              the first place. The next step is to 'Break Free'.
             </p>
             <div class="social">
               <i class="icon fa-brands fa-facebook"></i>
@@ -81,7 +84,7 @@
             </div>
           </div>
         </section>
-        <section id="roadmap section" class="roadmap">
+        <!-- <section id="roadmap" class="roadmap section">
           <h2>ROADMAP</h2>
           <div class="roadmap-wrapper">
             <div class="phase1">
@@ -108,8 +111,8 @@
               </ul>
             </div>
           </div>
-        </section>
-        <section id="tokenomic section" class="tokenomic">
+        </section> -->
+        <section id="tokenomic" class="tokenomic section">
           <h2 class="section-header">Tokenomics</h2>
 
           <div class="tokenomic-wrapper">
@@ -121,13 +124,13 @@
               <p>TOTAL TAX</p>
               <p>5/5</p>
             </div>
-            <div class="max-wallet">
+            <!-- <div class="max-wallet">
               <p>MAX WALLET</p>
               <p>2%</p>
             </div>
             <div class="max-tax">
               <p>MAX TX</p>
-              <p>1%</p>
+              <p>1%</p> -->
             </div>
           </div>
         </section>
