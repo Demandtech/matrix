@@ -9,7 +9,6 @@ body {
   box-sizing: border-box;
   background-color: rgba(0, 0, 0, 0.5);
   opacity: 0.7;
-  
 }
 h1,
 h2,
@@ -307,6 +306,54 @@ main {
   width: 100%;
 }
 
+footer .container {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  margin-top: 50px;
+  border-top: 2px solid #54fd05;
+  padding-top: 20px;
+}
+
+footer .footer-center h4 {
+  font-family: 'antimatrix';
+  margin-bottom: 10px;
+}
+
+footer .footer-center p {
+  font-family: 'geomatrix';
+  opacity: 0.7;
+}
+
+footer .footer-right {
+  display: inline-flex;
+  gap: 20px;
+  justify-content: center;
+}
+
+footer .footer-right a {
+  text-decoration: none;
+  font-size: 18px;
+  display: block;
+  padding: 7px 18px;
+  border-radius: 4px;
+}
+
+.footer-right .footer-telegram {
+  background: hsl(100, 100%, 100%);
+  color: #54fd05;
+}
+.footer-right .footer-twitter {
+  background-color: #92e5a1;
+  color: hsl(100, 100%, 100%);
+}
+
+.footer-right,
+.footer-left,
+.footer-center {
+  flex: 1;
+}
+
 @media screen and (max-width: 835px) {
   .container {
     max-width: 100%;
@@ -319,24 +366,26 @@ main {
   nav {
     flex-direction: column;
     width: 100%;
+    padding: 0;
   }
 
   .logo-wrapper {
     border-bottom: 2px solid #54fd05;
     width: 100%;
-    padding: 0 20px 20px 20px;
+    padding: 35px 20px 35px 20px;
   }
 
   .buy-btn {
     display: none;
+    margin-bottom: 25px;
   }
 
   .nav-bar {
     flex-direction: column;
-    margin: 30px 0;
     align-items: center;
     gap: 30px;
     display: none;
+    margin: 20px 0;
   }
 
   .nav-open {
@@ -361,16 +410,13 @@ main {
   .left {
     width: 100%;
     padding-left: 0;
+    max-height: 50vh;
   }
 
   .right {
     width: 100%;
     padding: 0px 0px 100px 30px;
   }
-
-  /* .right h1 {
-    text-align: center;
-  } */
 
   .about .container {
     padding: 0 30px;
@@ -411,15 +457,26 @@ main {
   .hero-img {
     width: 250px;
   }
+  footer .container {
+    flex-direction: column;
+    align-items: center;
+    width: 80%;
+    gap: 40px;
+  }
+  .footer-right {
+    flex-direction: column;
+  }
 }
 
 section {
   opacity: 0;
-  transform: translateY(-50px);
+  filter: blur(5px);
+  transform: translateY(-100%);
   transition: all 1s;
 }
 
 .show {
   opacity: 1;
+  filter: blur(0);
   transform: translateY(0);
 }
